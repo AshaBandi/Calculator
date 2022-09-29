@@ -2,65 +2,110 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Calculator</title>
-  <meta name="description" content="Simple Calculator With Dark Mode." />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/x-icon" href="assets/calculator.ico">
-  <link rel="stylesheet" href="styles/dark.css" id="theme" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1 user-scalable=no, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Simple Calculator Asha Bandi</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-70447982-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-70447982-5');
+</script>
+
+	<!-- Common Tags -->
+    <meta content='#171825' name='theme-color' />
+
+    <meta name="keywords"
+        content="Simple JavaScript Calculator, asha, JavaScript, Calculator, JavaScript Calculator, JSCalci, JavaScriptCalci, asha ">
+
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta property="og:title" content="Simple JavaScript Calculator" />
+    <meta property="og:description"
+        content="Simple JavaScript Calculator by asha " />
+    <meta property="og:image"
+        content="https://raw.github.com/asha07/Simple-JavaScript-Calculator/master/meta.jpg" />
+    <meta property="og:url" content="https://asha07.github.io/Simple-JavaScript-Calculator/" />
+    <meta property="og:site_name" content="Simple JavaScript Calculator" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="fb:admins" content="245221532650178" />
+    <meta property="og:type" content="website" />
+    <meta content='https://www.facebook.com/Theasha' property='article:author' />
+    <meta property="og:url" content="https://asha07.github.io/Simple-JavaScript-Calculator/" />
+    <!-- Search Engine -->
+    <meta property="description"
+        content="Simple JavaScript Calculator by asha " />
+    <meta property="image"
+        content="https://raw.github.com/asha07/Simple-JavaScript-Calculator/master/meta.jpg" />
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="Simple JavaScript Calculator" />
+    <meta itemprop="description"
+        content="Simple JavaScript Calculator by asha " />
+    <meta itemprop="image"
+        content="https://raw.github.com/asha07/Simple-JavaScript-Calculator/master/meta.jpg" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Simple JavaScript Calculator" />
+    <meta property="twitter:description"
+        content="Simple JavaScript Calculator by asha " />
+    <meta property="twitter:creator" content="@asha07" />
+    <meta property="twitter:creator:id" content="@asha07" />
+    <meta property="twitter:image:src"
+        content="https://raw.github.com/asha07/Simple-JavaScript-Calculator/master/meta.jpg" />
+	<meta property="twitter:image" content="Calculator by asha " />
+	<link rel='icon' type='image/x-icon' href='favicon.png' />
 </head>
 
 <body>
-  <div class="wrapper">
-    <div class="container">
-      <div class="header-container">
-        <!-- This heading also notifies about the theme change.-->
-        <h1 id="toast">Calculator</h1>
-        <div class="top-buttons">
-          <a href="#">
-            <img src="assets/GitHubLight.svg" alt="Sun Icon" height="22.5" width="22.5" id="github-icon">
-          </a>
-          <button type="button" onclick="changeTheme()" class="theme-button">
-            <img src="assets/SunIcon.svg" alt="Theme Icon" height="19" width="19" id="theme-icon">
-          </button>
-        </div>
-      </div>
-      <div class="first-row">
-        <input type="text" name="result" id="result" placeholder="Result" readonly />
-        <input type="button" value="C" onclick="result.value=''" id="clear-button" />
-      </div>
-      <div class="second-row">
-        <input type="button" value="1" onclick="liveScreen(1)" />
-        <input type="button" value="2" onclick="liveScreen(2)" />
-        <input type="button" value="3" onclick="liveScreen(3)" />
-        <input type="button" value="+" onclick="liveScreen('+')" />
-      </div>
-      <div class="third-row">
-        <input type="button" value="4" onclick=" liveScreen(4)" />
-        <input type="button" value="5" onclick=" liveScreen(5)" />
-        <input type="button" value="6" onclick=" liveScreen(6)" />
-        <input type="button" value="-" onclick="liveScreen('-')" />
-      </div>
-      <div class="fourth-row">
-        <input type="button" value="7" onclick="liveScreen(7)" />
-        <input type="button" value="8" onclick="liveScreen(8)" />
-        <input type="button" value="9" onclick=" liveScreen(9)" />
-        <input type="button" value="x" onclick="liveScreen('*')" />
-      </div>
-      <div class="fifth-row">
-        <input type="button" value="/" onclick="liveScreen('/')" />
-        <input type="button" value="0" onclick="liveScreen(0)" />
-        <input type="button" value="." onclick="liveScreen('.')" />
-        <input type="button" value="=" onclick="calculate(result.value)" />
-      </div>
-    </div>
-  </div>
-  <script src="scripts/script.js">
-  </script>
+	<div class="container">
+		<h1><a style="text-decoration: none; color: #f1c40f; margin-left: 0.25rem;" href="" onclick="location.reload();">CALCULATOR</a></h1 >
+		<div class="calculator">
+			<input type="text" name="screen" id="answer" readonly>
+			<table>
+				<tr>
+					<td><button>(</button></td>
+					<td><button>)</button></td>
+					<td><button style="background-color: #f01600; font-weight: bold; color: #ecf0f1;">C</button></td>
+					<td><button>%</button></td>
+				</tr>
+				<tr>
+					<td><button>7</button></td>
+					<td><button>8</button></td>
+					<td><button>9</button></td>
+					<td><button>X</button></td>
+				</tr>
+				<tr>
+					<td><button>4</button></td>
+					<td><button>5</button></td>
+					<td><button>6</button></td>
+					<td><button>-</button></td>
+				</tr>
+				<tr>
+					<td><button>1</button></td>
+					<td><button>2</button></td>
+					<td><button>3</button></td>
+					<td><button>+</button></td>
+				</tr>
+				<tr>
+					<td><button>0</button></td>
+					<td><button style="font-weight: bold;">.</button></td>
+					<td><button>/</button></td>
+					<td><button style="background-color: #25db72; font-weight: bold; color: #ecf0f1;">=</button></td>
+				</tr>
+			</table>
+			<hr style="max-width: 50vw;">
+			<div style="font-size:1rem; display: flex; align-items: center; justify-content: center;">Made with <img style="margin: 0.15rem;" src="heart.png">by<a style="text-decoration: none; color: #f1c40f; margin-left: 0.25rem;"
+                target="_blank" href="#">asha </a></div>
+		</div>
+	</div>
+    <div id="turn">
+    PLEASE TURN YOUR DEVICE
+	</div>
 </body>
-
+<script src="calc.js"></script>
 </html>
